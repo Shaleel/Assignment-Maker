@@ -174,7 +174,7 @@ body{
 }
 .editable{
     word-spacing: 15px;
-    line-height: 22.9px;
+    line-height: 1.4rem;
     overflow: hidden;
 }
 #date-container{
