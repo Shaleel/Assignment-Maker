@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    
+    <title>Assignment Maker</title>
+    <link rel = "icon" href =  
+"./title.png" 
+        type = "image/x-icon">
+</head>
+<body>
+    <div class="welcome-area">
+        <h1>Assignment Maker</h1>
+        <h3 style="margin:2vh;">Select your Page Layout</h3>
+        <div class="page-selector">
+            
+            <select id="page-select">
+                <option value="Lines with Margin">Lines with Margin</option>
+                <option value="Lines w/o Margin">Lines w/o Margin</option>
+                <option value="Plain">Plain</option>
+                <option value="Plain with Margin">Plain with Margin</option>
+            </select>
+
+            <label class="container">Spiral
+                <input id="spiral" type="checkbox" >
+                <span class="checkmark"></span>
+              </label>
+              <h5>Select Your Font</h5>
+              
+            <select id="font-select">
+                <option value="Caveat">Caveat</option>
+                <option value="Sacramento">Sacramento</option>
+                <option value="Homemade Apple">Homemade Apple</option>
+                <option value="Dawning of a New Day">Dawning of a New Day</option>
+                <option value="Satisfy">Satisfy</option>
+                <option value="Bohemian">Bohemian</option>
+                <option value="Romantic">Romantic</option>
+                <option value="Khanela">Khanela</option>
+                <option value="Liberika">Liberika</option>
+
+            </select>
+        </div>
+    </div>
+
+    <h5 style="margin-bottom: 20px;">Type OR Paste Text Below</h5>
+    <!-- editor -->
+    <div id="dumm" >
+        <div id="main-container" class="main-container">
+            <div id="spiral-image-left"></div>
+            <div id="spiral-image-right"></div>
+            <div id="full-page-overlay" class="overlay editable" contenteditable="true"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia hic temporibus quam? Cum ad perspiciatis voluptatum temporibus atque sapiente nobis porro, dolore qui similique maiores enim labore fugiat laborum pariatur?</p></div>
+            <textarea id="bottom-page-overlay" class=" bottom editable" contenteditable="true" ></textarea>
+            <div id="overlay"  class="overlay "></div>
+            <div class="top">
+                <div id="date-container" class=" editable" contenteditable="true"></div>
+            
+            <div id="top-container" class=" editable" contenteditable="true"></div>
+        </div>
+        
+        <div  id="lines" class="lines bottom"></div>
+            <div class="bottom">
+                <div id="margin-container" class=" editable" contenteditable="true"></div>
+                    <div id="page-container" class=" editable"  contenteditable="true">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In beatae libero alias iusto ratione quae. Ea animi architecto facilis perferendis, pariatur incidunt labore accusantium maiores natus nesciunt! Esse, laborum nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. In beatae libero alias iusto ratione quae. Ea animi architecto facilis perferendis, pariatur incidunt labore accusantium maiores natus nesciunt! Esse, laborum nihil.
+                    </div>
+            </div>
+        
+        </div>
+</div>
+    <!-- editor closed -->
+
+<div class="buttons1">
+    <button id="image-generator">Generate Image</button>
+    <button id="download">Download</button>
+</div>
+<h5>Preview</h5>
+    <div id="photo-container" class="photo-container" style="margin-top: 20px; " >
+    </div>
+
+  <br>  
+<h5 >Collection</h5>
+    <div id="collection">
+        
+    </div>
+
+    <div id="buttons2" class="buttons2" style="opacity: 1;">
+        <button id="download-pdf">Download Pdf</button>
+        <button id="download-images">Download All Pages</button>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+    <script src="./scripts/downloadImage.js"></script>
+    <script src="./scripts/imageGenerator.js"></script>
+    <script src="./scripts/downloadPDF.js"></script>
+    <script src="./domtoimageTEST.js"></script>
+    <script src="./scripts/fonts.js"></script>
+    <script src="./scripts/spiral.js"></script>
+    <script src="./scripts/domtoimage.js"></script>
+    <script src="./scripts/lines.js"></script>
+    <script src="./scripts/margin.js"></script>
+    <script src="./scripts/pageLayout.js"></script>
+    <script src="./scripts/main.js" ></script>
+   
+</body>
+</html>
