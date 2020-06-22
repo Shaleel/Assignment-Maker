@@ -140,6 +140,13 @@ body{
     color:rgb(0, 0, 0);
     border-radius: 20px;
 }
+
+#ink{
+    border: transparent;
+    width: 2rem;
+    height: 2rem;
+}
+
 .top{
     display: flex;
     flex-direction: row;
@@ -153,7 +160,6 @@ body{
 .main-container{
     font-family: 'Caveat', cursive;
     font-weight: bold;
-    color: rgb(25, 48, 255);
     position: relative;
     display: block;
     margin: auto;
@@ -168,7 +174,6 @@ body{
     border: hidden;
     font-family: 'Caveat', cursive;
     font-weight: bold;
-    color: rgb(25, 48, 255);
     background: transparent;
     resize: none;
 }
@@ -229,14 +234,9 @@ body{
     width: 100%;
     height: 100%; 
 }
-.back{
-    z-index: -1000;
-}
-.front{
-    z-index: 1000;
-}
+
 #full-page-overlay{
-    height: 95%;
+    height: 97%;
     position: absolute;
     bottom: 0;
     z-index: -10;

@@ -25,8 +25,18 @@ spiral.addEventListener('click',drawSpiral)
 let font=document.getElementById('font-select')
 font.addEventListener('change',changeFont)
 
+let ink=document.getElementById('ink')
+ink.value='#334fff'
+document.getElementById('main-container').style.color=ink.value;
+document.querySelector('textarea').style.color=ink.value;
 
+ink.addEventListener('change',changeInk)
 
+function changeInk(e)
+{
+    document.getElementById('main-container').style.color=e.target.value;
+    document.querySelector('textarea').style.color=e.target.value;
+}
 let imageGenerator=document.getElementById('image-generator')
 
 
